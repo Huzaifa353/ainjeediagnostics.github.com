@@ -1,0 +1,97 @@
+/** Header **/
+
+header {
+    height:450px;
+    position:relative;
+    background-image: url("../assets/sky.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+header #shade {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 111, 185, 0.3);
+}
+header #headContent #text {
+    float:none;
+    width :440px;
+    background-color: #0000003d;
+    margin-top:70px;
+    padding:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+header #headContent h1 {
+    margin-top:0;
+    width:440px;
+}
+header #headContent p {
+    width:440px;
+    text-align:center;
+    margin-bottom:0;
+}
+
+/** Content **/
+
+#content {
+    overflow:hidden;
+    height:1600px;
+}
+
+#content .center img {
+    width:500px;
+    margin-top:120px;
+    float:left;
+}
+#content .center #text {
+    position:relative;
+    width:400px;
+    float:left;
+    margin-top:80px;
+}
+#content #text h1 {
+    margin-top:0px;
+    width:400px;
+	font-family:abondoned;
+	font-size:350%;
+	color:#17a1cf;
+}
+#content #text p {
+    margin-top:40px;
+    margin-bottom:-5px;
+    width:400px;
+	font-size:130%;
+	line-height:27px;
+	color:#555;
+}
+#content #text #dot {
+    background-color:#17a1cf;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+    position:absolute;
+    bottom:-7px;
+}
+
+#content #section1 img {
+    margin-left:50px;
+}
+#content #section1 #text {
+    padding-left:40px;
+    border-left:2px solid #17a1cf;
+}
+#content #section1 #dot {
+    left:-13px;
+}
+
+#content #section2 #text {
+    margin-left:50px;
+    padding-right:40px;
+    border-right:2px solid #17a1cf;
+}
+#content #section2 #dot {
+    right:-14px;
+}
