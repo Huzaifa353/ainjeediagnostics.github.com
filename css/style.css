@@ -220,7 +220,7 @@ header #headContent .register a:hover {
     transition: background-color 0.3s ease-in, padding-right .3s ease;
 }
 
-header #headContent .register #arrow {
+#arrow {
     width:12px;
     height:12px;
     border-top:3px solid #aaa;
@@ -257,14 +257,14 @@ header #headContent .register a:hover #arrow {
 
 footer {
     overflow: hidden;
-    width:auto;
+    width:100%;
     height:220px;
     background-color:black;
 	font-size:80%;
     color:#999;
 }
 .footer-content {
-    height:250px;
+    height:174px;
     width:900px;
     margin-left:auto;
     margin-right:auto;
