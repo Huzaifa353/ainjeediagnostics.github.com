@@ -28,10 +28,29 @@
                 
                 <nav>
                     <ul>
-                        <li><a href="../">HOME</a></li>
-                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="../index.html">HOME</a></li>
+
+                        <li>
+                            <a onclick="dropDown(0,'white')" style="padding-right:10px">
+                                PRODUCTS
+                                <div class="triangle"></div>
+                            </a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="products.html">Home</a></li>
+                                    <li><a href="alinity.html">Alinity</a></li>
+                                    <li><a href="ruby.html">CD Ruby</a></li>
+                                    <li><a href="emerald22AL.html">CD Emerald-22 AL</a></li>
+                                    <li><a href="emerald22.html">CD Emerald-22</a></li>
+                                    <li><a href="emerald18.html">CD Emerald-18</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
                         <li><a href="policies.html">POLICIES</a></li>
+                        
                         <li><a href="investors.html">INVESTORS</a></li>
+                        
                         <li class="search">
                             <button onclick="SearchBox()">
                                 <img src="../assets/search.png" alt="search">
@@ -51,7 +70,14 @@
             </div>
             
             <div id="headContent">
-                <h1>WHAT WE PROVIDE</h1>
+                <h1>HEMATOLOGY ANALYZERS</h1>
+
+                <div class="register">
+                    <a href="alinity.html">
+                        VIEW OUR ALINITY FAMILY                  
+                        <div id="arrow"></div>
+                    </a>
+                </div>
             </div>
 
 
@@ -62,7 +88,7 @@
             <div class="center">
            
                 <div class="product">
-                    <img src="../assets/ruby.jpg">
+                    <img src="../assets/ruby-1.jpg">
 
                     <div id="text">
                         <h2>Cell DYN Ruby</h2>
@@ -95,7 +121,7 @@
 
 
                 <div class="product">
-                    <img src="../assets/Emerald 22 AL.jpg" style="height:55%">
+                    <img src="../assets/Emerald 22 AL-1.jpg" style="height:55%">
                     
                     <div id="text">
                         <h2>Cell DYN Emerald 22 AL</h2>
@@ -218,8 +244,8 @@
                         </div>
 
                         <div id="learn">
-                            <a href="">
-                                Learn More
+                            <a href="../assets/Alinity Brochure-1.pdf" target="_blank">
+                                View Brochure
                             </a>
                         </div>
                     </div>
@@ -229,37 +255,6 @@
                     </div>
                 </div>
                 
-                
-                <div class="product">
-                    <img src="../assets/ruby.jpg">
-                
-                    <div id="text">
-                        <h2>Product Name 6</h2>
-                        <p>This is the description of the product. Lorem Ipsum dolor sit amet.
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        </p>
-                        <div id="more">
-                            This section provides more description for the product. Lorem ipsum
-                            dolor sit amet, consectetur adipiscing elit, sed do aiusmond tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                            occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.
-                        </div>
-
-                        <div id="learn">
-                            <a href="">Learn More</a>
-                        </div>
-                    </div>
-                
-                    <div id="shade" onclick="Object.expand(6)">
-                        <div id="arrow"></div>
-                    </div>
-                </div>
-
             </div>
         </div>
 

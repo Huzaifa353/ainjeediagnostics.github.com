@@ -13,6 +13,47 @@ function SearchBox()
     }
 }
 
+document.getElementsByClassName("dropdown")[0].style.height = "0px";
+function dropDown(i, color) 
+{
+    var dropdown = document.getElementsByClassName("dropdown")[i];
+    var triangle = document.getElementsByClassName("triangle")[i];
+    var ul = dropdown.firstElementChild;
+
+    if(dropdown.style.height == "0px")
+    {
+        dropdown.style.height = "225px";
+        triangle.style.borderTop = "7px solid rgba(0,0,0,0)";
+        triangle.style.borderBottom = ("7px solid " + color);
+        triangle.style.marginTop = "0px";
+        ul.style.visibility = "visible";
+        ul.style.transitionDelay = "0.3s"
+    }
+    else {
+        dropdown.style.height = "0px";
+        triangle.style.borderTop = ("7px solid " + color);
+        triangle.style.borderBottom = "7px solid rgba(0,0,0,0)";
+        triangle.style.marginTop = "4px";
+        ul.style.visibility = "hidden";
+        ul.style.transitionDelay = "0s";
+    }
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() 
+{
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) 
+    {
+        document.getElementsByClassName("navBar")[0].style.top = "0";
+    } 
+    else 
+    {
+        document.getElementsByClassName("navBar")[0].style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+
 var Object = {
 
     expanded: -1,
