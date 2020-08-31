@@ -36,19 +36,29 @@ body {
 
 /******* Header *******/
 
+header{
+    overflow:hidden;
+}
+
 /** Navigation Bar **/
 
 .navBar {
     position:relative;
     height:80px;
     width:100%;
-    border-bottom:1px solid white;
+    border-bottom:2px solid white;
+    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter:blur(5px);
+    position:fixed;
+    top:0;
+    z-index:10;
+    transition:top 0.3s;
 }
 
 .navBar nav{
-    margin-left:8%;
+    margin-right:8%;
     height:80px;
-    float:left;
+    float:right;
 }
 
 .navBar ul {
@@ -62,10 +72,12 @@ body {
 }
 
 .navBar a {
+    position: relative;
 	color:white;
 	font-size:108%;
 	text-decoration:none;
-	padding:31px;
+    padding:31px;
+    cursor: pointer;
 }
 .navBar a:hover {
     text-decoration:underline;
@@ -75,6 +87,39 @@ body {
 }
 .navBar a[href=""]:hover{
     text-decoration:none;
+}
+.navBar a .triangle {
+    width:0;
+    height:0;
+    border:7px solid rgba(0,0,0,0);
+    border-top:7px solid white;
+    float:right;
+    margin-right:21px;
+    margin-top:4px;
+}
+.navBar .dropdown{
+    position: absolute;
+    top:80px;
+    height:0px;
+    background-color:rgba(0, 0, 0, 0.8);
+    transition: height 0.3s ease;
+}
+.navBar .dropdown li{
+    position:relative;
+    float:none;
+    text-align:center;
+}
+.navBar .dropdown ul{
+    margin:0;
+    padding:0;
+    visibility: hidden;
+    transition-property: visibility;
+}
+.navBar nav .dropdown a {
+    display:block;
+    color:rgb(255, 255, 255);
+    padding:10px 0;
+    width:200px;
 }
 
 .navBar .search {
@@ -92,7 +137,7 @@ body {
 .navBar #searchbox{
 	position:absolute;
 	top:48px;
-	left:0;
+	right:0;
 	width:360px;
 	background-color:white;
 	color:black;
@@ -121,6 +166,7 @@ body {
 
 .signin {
     float:right;
+    display:none;
 }
 
 .signin a {
@@ -167,6 +213,7 @@ body {
 /** HeadContent **/
 
 header #headContent {
+    margin-top:80px;
     position:relative;
     max-width:80%;
     margin-left:auto;
@@ -179,7 +226,8 @@ header #headContent #text{
 
 header #headContent h1{
 	width:400px;
-	font-family:abondoned;
+    font-family:abondoned;
+    font-weight:bold;
 	font-size:553%;
 	color:white;
 	letter-spacing:10px;

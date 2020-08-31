@@ -1,0 +1,118 @@
+header {
+    height:900px;
+} 
+header #headContent img {
+    width:700px;
+}
+header #headContent{
+    max-width:700px;
+}
+
+#content {
+    height:auto;
+    color:#182732;
+}
+
+#content #block1 {
+    width:90%;
+    height:calc(650px - 20vw);
+    margin:0 auto;
+}
+#content #block1 #text {
+    box-sizing: border-box;
+    float:left;
+    width:40%;
+    margin:3% 5%;
+    padding:0 2%;
+    color:#182732;
+    font-size:17px;
+    border-left:1px solid #182732;
+}
+#content #block1 img {
+    float:left;
+    width:50%;
+    max-width:500px;
+}
+
+#content #block2{
+    position:relative;
+    margin:0 auto;
+    width:100%;
+    height:1100px;
+    border-top:10px solid #b72868;
+    border-bottom:10px solid #b72868;
+    background-color:#182732;
+    color:white;
+}
+#content #block2 #catchPhrase {
+    font:33px helvetica;
+    font-weight:bold;
+    margin:30px 50px 0 50px;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.3);
+}
+#content #block2 #largeBox {
+    width:100%;
+    height:calc(100% - 100px);
+    position:absolute;
+    bottom:0;
+}
+#content #block2 .box img {
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    display:block;
+}
+
+#content #block3 {
+    width:90%;
+    margin:0 auto;
+}
+#content #block3 #text {
+    float:left;
+    width:50%;
+    max-width:500px;
+}
+#content #block3 img {
+    float:right;
+    width:50%;
+    max-width:500px;
+    margin-bottom:50px;
+}
+#content #block3 h2{
+    clear:both;
+    font:210% helvetica;
+    padding:10px 50px;
+    border-bottom:1px solid #182732;
+}
+#content #block3 p{
+    font:17px helvetica;
+    padding:10px 50px;
+}
+
+#content #block4 table,
+#content #block4 th, 
+#content #block4 td{
+    clear:both;
+    margin:50px auto;
+    padding:10px 30px;
+    border-collapse:collapse;
+    font-size:15px;
+}
+#content #block4 table th{
+    background-color: #182732;
+    color:white;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    font-size:17px;
+    text-transform: capitalize;
+}
+#content #block4 table td {
+    border:1px solid black;
+}
+#content #block4 table #info td {
+    background-color:lightgrey;
+}
+#content #block4 table #info{
+    font-weight:bold;
+}
