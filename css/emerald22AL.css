@@ -89,30 +89,3 @@ header #headContent{
     font:17px helvetica;
     padding:10px 50px;
 }
-
-#content #block4 table,
-#content #block4 th, 
-#content #block4 td{
-    clear:both;
-    margin:50px auto;
-    padding:10px 30px;
-    border-collapse:collapse;
-    font-size:15px;
-}
-#content #block4 table th{
-    background-color: #182732;
-    color:white;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    font-size:17px;
-    text-transform: capitalize;
-}
-#content #block4 table td {
-    border:1px solid black;
-}
-#content #block4 table #info td {
-    background-color:lightgrey;
-}
-#content #block4 table #info{
-    font-weight:bold;
-}
